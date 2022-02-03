@@ -29,7 +29,7 @@ update the url for the formula  located in `Formula/brev.rb` and then run `brew 
 or
 
 ```
-λ curl https://codeload.github.com/brevdev/brev-cli/tar.gz/refs/tags/v0.6.13 | openssl sha256
+curl https://codeload.github.com/brevdev/brev-cli/tar.gz/refs/tags/v0.6.13 | openssl sha256
 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
