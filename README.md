@@ -9,10 +9,10 @@ if brew is not already installed on your workspace install it with
 or if you need to uninstall brew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+```
 
 ## release [brev cli](https://github.com/brevdev/brev-cli) 
 
-```
 
 head to the releases page, which should look something similar to
 ```
