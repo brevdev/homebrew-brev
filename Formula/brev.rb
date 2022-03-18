@@ -2,7 +2,7 @@ class Brev < Formula
   desc "CLI tool for managing workspaces provided by brev.dev"
   homepage "https://docs.brev.dev"
   url "https://github.com/brevdev/brev-cli/archive/refs/tags/v0.6.31.tar.gz"
-  sha256 "7b17e3c6a0e3fd3082f7bcd9919bc934ec44278acd7ad61b9a33f7e920236e43"
+  sha256 "8a35a4cab8800a39ba838e39ddc3e63460b0529635fef01bc396d7c754f17dcdS"
   license "MIT"
   depends_on "go" => :build
 
