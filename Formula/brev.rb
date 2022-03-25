@@ -6,7 +6,6 @@ class Brev < Formula
   desc "CLI tool for managing workspaces provided by brev.dev"
   homepage "https://docs.brev.dev"
   version "0.6.36"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
