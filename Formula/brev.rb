@@ -5,20 +5,20 @@
 class Brev < Formula
   desc "CLI tool for managing workspaces provided by brev.dev"
   homepage "https://docs.brev.dev"
-  version "0.6.40"
+  version "0.6.41"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.40/brev-cli_0.6.40_darwin_arm64.tar.gz"
-      sha256 "8931c0b45cf1279c601fc9b6c3a88ad0eeda2a59ef7f4c3d3570d6c770b36144"
+      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.41/brev-cli_0.6.41_darwin_arm64.tar.gz"
+      sha256 "8cd9fdd2910480aa2c257d6ffdf14f2883d26874d2a4a16ee55e0dacc2a6724e"
 
       def install
         bin.install "brev"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.40/brev-cli_0.6.40_darwin_amd64.tar.gz"
-      sha256 "7cf7793448cf5960167073966f09c16bae0c56da6ac4b2bf690a6f893701f2f6"
+      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.41/brev-cli_0.6.41_darwin_amd64.tar.gz"
+      sha256 "07c5a0f1e4e0a8816519d647e9f47e6ce70c062e8fc9250ff78b20e235442745"
 
       def install
         bin.install "brev"
@@ -28,16 +28,16 @@ class Brev < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.40/brev-cli_0.6.40_linux_arm64.tar.gz"
-      sha256 "cadce8422c8c2a5c42a5c9ef40b5a0eb8027f93049bb6e8f3dbbf3c5e2d2e097"
+      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.41/brev-cli_0.6.41_linux_arm64.tar.gz"
+      sha256 "2d7441165d6793e43081774bf7f5bc30812d40188dce877c309402bd0b371d61"
 
       def install
         bin.install "brev"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.40/brev-cli_0.6.40_linux_amd64.tar.gz"
-      sha256 "bfd37b2b4247daa6fddfd94debc4ad213f8c9caac5fedca0305ee2aacf25c675"
+      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.41/brev-cli_0.6.41_linux_amd64.tar.gz"
+      sha256 "04ae176e7fdf66109b1c0ab03ee2c5dc93e71f40b6cbd6e12d37ba8e442940d8"
 
       def install
         bin.install "brev"
