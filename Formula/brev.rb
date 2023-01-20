@@ -5,21 +5,21 @@
 class Brev < Formula
   desc "CLI tool for managing workspaces provided by brev.dev"
   homepage "https://docs.brev.dev"
-  version "0.6.197"
+  version "0.6.199"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.197/brev-cli_0.6.197_darwin_arm64.tar.gz"
-      sha256 "8c20fbf6d06af0827010a413edef6f77f5a94e6e661adcfb8a4a54291984cafe"
+    if Hardware::CPU.intel?
+      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.199/brev-cli_0.6.199_darwin_amd64.tar.gz"
+      sha256 "9dea6208cced0ba32b0ba1593772b3b582e89dde5d908369ee85e16631cf2e44"
 
       def install
         bin.install "brev"
         generate_completions_from_executable("#{bin}/brev", "completion")
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.197/brev-cli_0.6.197_darwin_amd64.tar.gz"
-      sha256 "4e585ef8db5079a727f59658bcf800d9ab01352fb76211197f70d84d4bc22d89"
+    if Hardware::CPU.arm?
+      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.199/brev-cli_0.6.199_darwin_arm64.tar.gz"
+      sha256 "bc95b8c67564b6dadecefe2ec1b0e18519e672e6d5882f3e5ffbb4c9f6e176c2"
 
       def install
         bin.install "brev"
@@ -30,8 +30,8 @@ class Brev < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.197/brev-cli_0.6.197_linux_arm64.tar.gz"
-      sha256 "f7050a8bbd3b7cd772709b0418ba074255125399d15eb60eb99f80de40639594"
+      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.199/brev-cli_0.6.199_linux_arm64.tar.gz"
+      sha256 "8562a3338c4727aa9e8244f053a213bd512457d1fc47c2f7c67e1700268063cf"
 
       def install
         bin.install "brev"
@@ -39,8 +39,8 @@ class Brev < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.197/brev-cli_0.6.197_linux_amd64.tar.gz"
-      sha256 "217d5e1fa9f6ce209c76c543850926ded9696f80f44034aa01873abd7393889a"
+      url "https://github.com/brevdev/brev-cli/releases/download/v0.6.199/brev-cli_0.6.199_linux_amd64.tar.gz"
+      sha256 "d4bc45e0051a3d52a42d8975b74bf27ec77b2df650d94008e249a7f6843a9980"
 
       def install
         bin.install "brev"
